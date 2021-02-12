@@ -31,12 +31,28 @@ html {
 a {
   color: var(--link-gray-color);
   text-decoration: none;
+  font-size: 1.4rem;
+}
+a:hover {
+  color: var(--btn-orange);
+  text-decoration: underline;
 }
 span {
   font-size: 1.4rem;
 }
 ul {
   list-style: none;
+}
+h1 {
+  font-size: 2.4rem;
+}
+span.price-color {
+  color: var(--price-color);
+  font-weight: bold;
+}
+span.price-color.price-large {
+  font-size: 2.4rem;
+  font-weight: normal;
 }
 /* *=====================Header=================================* */
 #nav-global {
@@ -149,7 +165,7 @@ ul {
   padding: 1rem 3rem;
   font-size: 1.4rem;
   flex-wrap: nowrap;
-  padding: 2.5rem;
+  min-width: 135rem;
 }
 #nav-main .nav-list ul {
   display: flex;
@@ -157,7 +173,7 @@ ul {
   justify-content: space-between;
 }
 #nav-main .nav-list ul li {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 #nav-main .nav-list ul li i {
   padding-right: 1rem;
@@ -165,7 +181,16 @@ ul {
 #nav-main .nav-list ul li a {
   color: var(--font-white);
 }
+#nav-main .nav-list ul li a:hover {
+  text-decoration: none;
+}
 #nav-main .nav-list ul li:hover {
+  border: 1px solid var(--font-white);
+}
+#nav-main .covid {
+  padding: 0.5rem 1rem;
+}
+#nav-main .covid:hover {
   border: 1px solid var(--font-white);
 }
 
@@ -174,20 +199,111 @@ ul {
   max-width: 150rem;
   min-width: 100rem;
   margin: 0 auto;
-  /* !Temporary!!!*/
-  border: #000 solid 1px;
-  /* !Temporary!!!*/
 }
 .wayfinding-breadcrumbs_container {
+  padding: 0.8rem;
   width: 100%;
-  /* !Temporary!!!*/
-  height: 1rem;
-  background: brown;
-  /* !Temporary!!!*/
+}
+.wayfinding-breadcrumbs_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+}
+.wayfinding-breadcrumbs_container ul li {
+  padding-right: 0.5rem;
+}
+.wayfinding-breadcrumbs_container ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.wayfinding-breadcrumbs_container ul li span {
+  font-size: 0.8rem;
 }
 .main-container .col-container {
-  height: 100rem;
+  display: flex;
+  position: relative;
+  margin-top: 2rem;
+  padding: 0 2rem;
 }
+/* left column */
+.main-container .col-container .left-col {
+  display: flex;
+  min-width: 40rem;
+}
+.main-container .col-container .left-col ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main-container .col-container .left-col li img {
+  cursor: pointer;
+  border: 1px solid var(--font-black);
+}
+.main-container .col-container .left-col li img:hover {
+  border: var(--btn-orange) 2px solid;
+}
+.main-container .col-container .left-col .large-img img {
+  border: none;
+  padding: 4rem 1rem 5rem 1rem;
+  width: 100%;
+}
+.main-container .col-container .left-col .large-img img:hover {
+  border: none;
+}
+/* central-column */
+
+/* central-column-top */
+.main-container .col-container .central-col .central-col-top,
+.main-container .col-container .central-col .central-col-middle {
+  border-bottom: 1px solid var(--border-color);
+}
+.main-container .col-container .central-col .central-col-top ul {
+  display: flex;
+}
+.main-container .col-container .central-col .central-col-top ul li {
+  padding-right: 1rem;
+}
+.main-container .col-container .central-col .central-col-top ul li.break {
+  font-size: 1.4rem;
+}
+/* central-column-middle */
+.main-container .col-container .central-col .central-col-middle,
+.main-container .col-container .central-col .central-col-footer {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  text-align: left;
+  line-height: 2.5rem;
+}
+
+.main-container .col-container .central-col .central-col-middle .price button {
+  background: var(--product-style-bg-color);
+  border: 1px solid var(--btn-orange);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+/* central-column-footer */
+.main-container .col-container .central-col .central-col-footer ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.main-container .col-container .central-col .central-col-footer i {
+  font-size: 1rem;
+  padding-right: 0.5rem;
+}
+.main-container .col-container .central-col .central-col-footer i {
+  color: var(--link-gray-color);
+}
+.main-container
+  .col-container
+  .central-col
+  .central-col-footer
+  i.fa-chevron-right {
+  color: var(--btn-orange);
+}
+
+/* ?==============carousel=======================? */
 .main-container .carousel-cotainer-1 {
   width: 100%;
   border-bottom: var(--border-color) 1px solid;

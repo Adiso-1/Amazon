@@ -1,0 +1,197 @@
+/* ! Link: https://www.amazon.com/dp/B08KH3Z5WW/ref=twister_B08MTYYYCR?_encoding=UTF8&th=1 ! */
+@font-face {
+  font-family: "Ember-regular";
+  src: url("../fonts/AmazonEmber_Rg.ttf");
+}
+:root {
+  --font-black: #0f1111;
+  --font-gray: #565959;
+  --font-white: #fff;
+  --header-bg-color: #131921;
+  --nav-bg-color: #232f3e;
+  --link-gray-color: #007185;
+  --nav-search-color: #febd69;
+  --btn-orange: #ed9220;
+  --btn-light-orange: #f0c14b;
+  --btn-border: #a88734;
+  --price-color: #b12704;
+  --product-style-bg-color: #fefaf6;
+  --border-color: #cccccc;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ember-regular";
+}
+html {
+  font-size: 62.5%;
+}
+
+a {
+  color: var(--link-gray-color);
+  text-decoration: none;
+}
+span {
+  font-size: 1.4rem;
+}
+ul {
+  list-style: none;
+}
+/* *=====================Header=================================* */
+#nav-global {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-bg-color);
+  height: 6rem;
+  padding: 0.5rem;
+  color: var(--font-white);
+  min-width: 110rem;
+}
+/* #nav-global .nav-logo:hover div,
+#nav-global .nav-search:hover div,
+#nav-global .nav-cart:hover div {
+  border: var(--font-white) 1px solid;
+} */
+#nav-global .nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--font-white);
+  position: relative;
+}
+#nav-global .nav-logo .logo img {
+  width: 15rem;
+  padding: 1rem 1rem 0 0;
+}
+
+#nav-global .nav-logo .deliver a {
+  display: flex;
+  align-content: center;
+  align-items: flex-end;
+  color: var(--font-white);
+  padding-right: 1rem;
+}
+#nav-global .nav-logo .deliver a .rows {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+#nav-global .nav-logo .deliver .row-1 {
+  font-size: 1.2rem;
+  color: var(--font-gray);
+}
+#nav-global .nav-search {
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+}
+#nav-global .nav-search i {
+  color: var(--nav-bg-color);
+  background: var(--btn-light-orange);
+  font-size: 1.9rem;
+  width: 4.5rem;
+  border-radius: 0 3px 3px 0;
+  padding: 1.1rem 0 0 1.1rem;
+}
+#nav-global .nav-search input {
+  height: 4rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 2rem;
+  position: relative;
+  display: inline-block;
+  margin-right: -0.2rem;
+}
+#nav-global .nav-search form {
+  display: flex;
+  width: 100%;
+}
+
+#nav-global .nav-search select {
+  position: relative;
+  border: none;
+  outline: none;
+  background: var(--border-color);
+  margin-right: -0.2rem;
+  border-radius: 5px 0 0 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 6rem;
+}
+#nav-global .nav-cart {
+  display: flex;
+  font-size: 1.4rem;
+  padding: 1rem;
+  align-items: center;
+}
+#nav-global .nav-cart div {
+  padding: 0 1rem;
+}
+#nav-global .nav-cart .country img {
+  width: 3rem;
+  margin-top: 1rem;
+}
+
+/* *=====================Main-Nav=================================* */
+#nav-main {
+  width: 100%;
+  background: var(--nav-bg-color);
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-white);
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  flex-wrap: nowrap;
+  padding: 2.5rem;
+}
+#nav-main .nav-list ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#nav-main .nav-list ul li {
+  padding: 1rem;
+}
+#nav-main .nav-list ul li i {
+  padding-right: 1rem;
+}
+#nav-main .nav-list ul li a {
+  color: var(--font-white);
+}
+#nav-main .nav-list ul li:hover {
+  border: 1px solid var(--font-white);
+}
+
+/* *=====================Main-section=================================* */
+.main-container {
+  max-width: 150rem;
+  min-width: 100rem;
+  margin: 0 auto;
+  /* !Temporary!!!*/
+  border: #000 solid 1px;
+  /* !Temporary!!!*/
+}
+.wayfinding-breadcrumbs_container {
+  width: 100%;
+  /* !Temporary!!!*/
+  height: 1rem;
+  background: brown;
+  /* !Temporary!!!*/
+}
+.main-container .col-container {
+  height: 100rem;
+}
+.main-container .carousel-cotainer-1 {
+  width: 100%;
+  border-bottom: var(--border-color) 1px solid;
+  border-top: var(--border-color) 1px solid;
+  /* !Temporary!!!*/
+  height: 50rem;
+}

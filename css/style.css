@@ -58,6 +58,21 @@ span.price-color.price-large {
 .gray-font {
   color: var(--font-gray);
 }
+.right-col .social .fa-envelope {
+  color: var(--font-gray);
+}
+.right-col .social .fa-facebook-square {
+  color: #4267b2;
+}
+.right-col .social .fa-twitter {
+  color: #1da1f2;
+}
+.right-col .social .fa-pinterest {
+  color: #e60023;
+}
+.fa-star {
+  color: var(--btn-orange);
+}
 /* *=====================Header=================================* */
 #nav-global {
   width: 100%;
@@ -321,15 +336,68 @@ span.price-color.price-large {
 .right-col-purchase-summary > div {
   padding-bottom: 1rem;
 }
-.right-col-purchase-summary .cart-btn {
+.right-col-purchase-summary i {
+  color: var(--font-white);
+  background: var(--nav-bg-color);
+  padding: 0.7rem;
+  font-size: 1.5rem;
+}
+.right-col-purchase-summary .btn {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  align-items: center;
   background: var(--btn-light-orange);
   border-radius: 0.2rem;
   border: var(--btn-border) 1px solid;
-  padding: 0.5rem;
+  padding: 0.2rem;
   text-align: center;
+  margin-bottom: 1rem;
+}
+.right-col-purchase-summary .btn:hover {
+  background: #e0b649;
+}
+.right-col-purchase-summary .btn.buy-btn {
+  background: var(--btn-orange);
+}
+.right-col-purchase-summary .btn.buy-btn:hover {
+  background: #cc7f20;
+}
+.right-col-purchase-summary .fa-lock {
+  background: none;
+  color: #999;
+}
+.right-col-purchase-summary td {
+  color: var(--font-gray);
+  font-size: 1.2rem;
+  padding: 0 1rem 1rem 0;
+}
+.right-col-purchase-summary .gift-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+.right-col-purchase-summary .gift-container input {
+  margin: 0.4rem 0.5rem 0 0;
+}
+.right-col-purchase-summary .fa-map-marker-alt {
+  background: none;
+  color: var(--header-bg-color);
+}
+.right-col-purchase-summary form select {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+.right-col .social {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 2rem;
+  align-items: center;
+  margin: 1rem auto;
 }
 
 /* ?==============carousel=======================? */
@@ -337,6 +405,15 @@ span.price-color.price-large {
   width: 100%;
   border-bottom: var(--border-color) 1px solid;
   border-top: var(--border-color) 1px solid;
-  /* !Temporary!!!*/
-  height: 50rem;
+}
+.main-container .carousel-cotainer-1 .carousel-header {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .carousel-cotainer-1 .carousel-header .fa-exclamation {
+  /* color: var(--font-white); */
+  background: #999;
+  border-radius: 50%;
+  font-size: 1rem;
+  margin-left: 1rem;
 }
